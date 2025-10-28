@@ -83,5 +83,37 @@ Na implementacao correta, criamos uma classe CreditCard que define um contrato p
 # Interface Segregation Principle (ISP)
 O ISP afirma que os clientes nao devem ser forcados a depender de metodos que nao utilizam. As interfaces devem ser pequenas e focadas em um conjunto especifico de metodos.
 
+# Violacao do interface Sefregation Principle (ISP)
+
+``` Java
+interface PaymentService {
+  processCreditCardPayament(amount: number);
+  validateCreditCard();
+  processLoan(amount: number);
+}
+
+class CreditCardService implements: PaymentService{
+  processCreditcardPayment(amount: number) {
+    // implementacao de pagamento com cartao de credito
+  }
+  validateCrediCard(){
+    // Validacao de cartao de credito
+  }
+  processLoan(amount: number){
+    // Nao deveria existir
+    throw new Error{"Metodo nao suportado"}
+  }
+  class LoandService implements PaymentService{
+    processCrediCardPayment(amount: number){
+      // Nao deveria existir
+      throw new Error("Metodo nao suportado")
+    }
+    processLoan(amount: number){
+      // Processamento de pagamento de emprestimo
+    }
+  }
+}
+```
+
 
 
