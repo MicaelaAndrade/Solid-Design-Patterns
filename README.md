@@ -151,11 +151,11 @@ o que sao desing patterns ?
  Design sao estrategias revoluncionarias de desenvolvimento que transformam desafios complexos em solucoes elegantes, permitindo que desenvolvedores criem sistemas mais robustos, escalaveis e intuitivos.
 
 # Caracteristicas
-Resolucao de Problemas Comuns: Padroes pre-definidos para enfrentar desafios recorrentes no desenvolvimento de software
+- Resolucao de Problemas Comuns: Padroes pre-definidos para enfrentar desafios recorrentes no desenvolvimento de software
 
-Reutilizacao de Codigos: Facilita a criacao de componentes que podem ser aplicados em diferentes contextos e projetos.
+- Reutilizacao de Codigos: Facilita a criacao de componentes que podem ser aplicados em diferentes contextos e projetos.
 
-Comunicacao Tecnica Padronizada: Simplifica o entendimento entre desenvolvedores atraves de uma linguagem tecnica compartilhada
+- Comunicacao Tecnica Padronizada: Simplifica o entendimento entre desenvolvedores atraves de uma linguagem tecnica compartilhada
 
 # Niveis de Design de  Software 
 
