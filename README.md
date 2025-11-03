@@ -143,4 +143,44 @@ Antes de entender a inversao de dependencia, e importante compreender a diferenc
 # Conclusao
   DIP e um principio arquitetural, enquanto DI e um padrao de implementacao. DI e uma base tecnica concreta que ajuda a realizar os objetivos do DIP, criando software mais flexivel e desacoplado.
 
+-----------------------------------------------------------------------
 
+# Gang of Four e Aplicacoes Reais
+
+o que sao desing patterns ?
+ Design sao estrategias revoluncionarias de desenvolvimento que transformam desafios complexos em solucoes elegantes, permitindo que desenvolvedores criem sistemas mais robustos, escalaveis e intuitivos.
+
+# Caracteristicas
+Resolucao de Problemas Comuns: Padroes pre-definidos para enfrentar desafios recorrentes no desenvolvimento de software
+
+Reutilizacao de Codigos: Facilita a criacao de componentes que podem ser aplicados em diferentes contextos e projetos.
+
+Comunicacao Tecnica Padronizada: Simplifica o entendimento entre desenvolvedores atraves de uma linguagem tecnica compartilhada
+
+# Niveis de Design de  Software 
+
+- Nivel Estrategico: Arquitetura de Software e Principios SOLID
+
+- Tatico: Implementacoes Concretas e solucoes especificas para construcao de software
+
+Os niveis estrategicos e taticos sao complementares: as arquiteturas e principios SOLID definem uma visao de mais alto nivel, enquanto os Design Patterns fornecem os detalhes de mais baixo nivel para implementar essa visao.
+
+Design patters sao agrupadores em tres categorias fundamentas que cobrem diferentes aspectos do desenvolvimento de software: criacao, estrutura e comportamento de objetos.
+
+# Categorizacao dos Design Patterns
+
+- Padroes Criacionais: Estrategias para a criacao de objetos de forma flexivel.
+- Padroes Estruturais: Organizacao de classes e objetos para formar sistemas mais modulares.
+- Padroes Comportamentais: Definicao da interacao entre objetos e distribuicao de responsabilidades.
+
+# Padroes Populares
+
+- Singleton: Garante que apenas uma isntancia de uma classe seja criada, util para gerenciar recuros compartilhados.
+
+- Builder: Separa a contrucao de um objeto complexo de sua representacao,permitindo criar diferentes representacoes.
+
+- Observer: Permite que objetos dependentes sejam notificados de mudancas em um objeto especifico.
+
+- Factory Method: Define um metodo para criar objetos, permitindo a criacao de diferentes tipos de objetos a partir de uma unica interface.
+
+- Adapter: 
