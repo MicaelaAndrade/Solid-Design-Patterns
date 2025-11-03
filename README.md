@@ -113,7 +113,34 @@ class CreditCardService implements: PaymentService{
     }
   }
 }
-```
 
+```
+![Segregacao da Segregacao de Componentes](/images/image.png)
+
+# Dependency Inversion Principle (DIP)
+O DIP determina que as classes de alto nivel nao devem depender de classes de baico nivel. Em vez disso, ambas devem depender de abstracoes. Isso permite que o codigo seja mais flexivel e facil de testar.
+
+# Alto Nivel vs Baixo Nivel
+Antes de entender a inversao de dependencia, e importante compreender a diferenca entre modulos de alto e baixo nivel.
+
+- Modulo de Alto Nivel: Contem regras de negocio mais abstratas, que orquestram funcionalidades do sistemas.
+- Modulo de Baixo Nivel: Contem implementacoes especificas, como acesso a banco de dados, APIs externas e manipulacoes de arquivos.
+
+![Exemplo de Codigo? Violando o DIP](/images/image-1.png)
+
+# DIP vs Dependency Injection
+
+- Dependency Inversion Principle (DIP): 
+  - Foca an estrutura de dependencias
+  - Define como classes devem depender de abstracoes
+  - objetivos: reduzir acoplamento entre componentes
+
+- Dependency Injection (DI):
+  - Foca na implementacao de dependencias
+  - Fornece mecanismo para injetar dependencias
+  - Objetivos: facilitar a modularidade e testabilidade
+
+# Conclusao
+  DIP e um principio arquitetural, enquanto DI e um padrao de implementacao. DI e uma base tecnica concreta que ajuda a realizar os objetivos do DIP, criando software mais flexivel e desacoplado.
 
 
