@@ -129,7 +129,6 @@ Antes de entender a inversao de dependencia, e importante compreender a diferenc
 ![Exemplo de Codigo? Violando o DIP](/images/image-1.png)
 
 # DIP vs Dependency Injection
-
 - Dependency Inversion Principle (DIP): 
   - Foca an estrutura de dependencias
   - Define como classes devem depender de abstracoes
@@ -146,7 +145,6 @@ Antes de entender a inversao de dependencia, e importante compreender a diferenc
 -----------------------------------------------------------------------
 
 # Gang of Four e Aplicacoes Reais
-
 o que sao desing patterns ?
  Design sao estrategias revoluncionarias de desenvolvimento que transformam desafios complexos em solucoes elegantes, permitindo que desenvolvedores criem sistemas mais robustos, escalaveis e intuitivos.
 
@@ -158,7 +156,6 @@ o que sao desing patterns ?
 - Comunicacao Tecnica Padronizada: Simplifica o entendimento entre desenvolvedores atraves de uma linguagem tecnica compartilhada
 
 # Niveis de Design de  Software 
-
 - Nivel Estrategico: Arquitetura de Software e Principios SOLID
 
 - Tatico: Implementacoes Concretas e solucoes especificas para construcao de software
@@ -168,13 +165,11 @@ Os niveis estrategicos e taticos sao complementares: as arquiteturas e principio
 Design patters sao agrupadores em tres categorias fundamentas que cobrem diferentes aspectos do desenvolvimento de software: criacao, estrutura e comportamento de objetos.
 
 # Categorizacao dos Design Patterns
-
 - Padroes Criacionais: Estrategias para a criacao de objetos de forma flexivel.
 - Padroes Estruturais: Organizacao de classes e objetos para formar sistemas mais modulares.
 - Padroes Comportamentais: Definicao da interacao entre objetos e distribuicao de responsabilidades.
 
 # Padroes Populares
-
 - Singleton: Garante que apenas uma isntancia de uma classe seja criada, util para gerenciar recuros compartilhados.
 
 - Builder: Separa a contrucao de um objeto complexo de sua representacao,permitindo criar diferentes representacoes.
@@ -183,4 +178,46 @@ Design patters sao agrupadores em tres categorias fundamentas que cobrem diferen
 
 - Factory Method: Define um metodo para criar objetos, permitindo a criacao de diferentes tipos de objetos a partir de uma unica interface.
 
-- Adapter: 
+- Adapter: Adapta a interface de uma classe para outra,  facilitando a integracao de classes com interfaces incompativeis.
+
+- Strategy: Define uma familia de algoritmos, encapsulando cada um deles e torando-os intercambiaveis
+
+# Devemos usar Desing Patterns para tudo ?
+- Identificar o Problema: Antes de aplicar qualquer design pattern, analise cuidadosamente o problema de design de software. Busque padroes recorrentes de complexidade, acoplamento inadequado ou dificuldade de extensao no codigo.
+
+- Criterios de Selecao: Considere tres aspectos fundamentais:
+  - A frequencia do problema no sistema
+  - A complexidade da solucao atual
+  - O potencial de reuso e manutencao.
+
+- Evitar "Paternite": Cuidado para nao transformar design patterns em uma solucao universal. Aplique apenas quando realmente necessario, evitando complexidade desnecessario e sobrecarga de abstracao.
+
+![Padroes de Design: Categorias Completas](/images/image-3.png)
+
+# Singleton (Problema a ser resolvido)
+Sem controle adequado, multiplas instancias de um objeto podem causar problemas como:
+
+- Desperdicio de recurso
+- Inconsistencias de estado
+- Concorrencia descontrolada
+- Complexidade desnecessaria
+
+# Solucao
+O Singleton garante que uma classe tenha apenas uma unica intancia e fornece um ponto global de acesso a essa instancia.
+
+- Tornar o construtor da classe privado. impedindo que novas instancias sejam criada externamente.
+- Criar um metodo publico estatico que retorna a unica instancia da classe.
+- Garantir que essa instancia seja inicializada apenas uma vez durante toda a execucao do programa.
+
+# Exemplo de Uso
+- Gerenciamento de conexoes com banco de dados
+- Servicos de logging
+- Cache compartilhando
+- Configuracoes globais de aplicacoes 
+- Manipulando de filas de mensagens
+
+![Sem Singleton](/images/image-4.png)
+
+![Implementacao do Singleton](/images/image-5.png)
+
+# Desenvolvendo sistema de cache
