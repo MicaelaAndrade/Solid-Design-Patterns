@@ -221,3 +221,12 @@ O Singleton garante que uma classe tenha apenas uma unica intancia e fornece um 
 ![Implementacao do Singleton](/images/image-5.png)
 
 # Desenvolvendo sistema de cache
+
+## 📁 Exemplo Prático
+Para ver a implementação completa do Singleton aplicado a um sistema de cache, consulte:
+- **Caminho:** `Exercicios/singleton/`
+- Arquivos disponíveis:
+  - `index.ts` - Implementação principal
+  - `cache/RegularCache.ts` - Cache sem Singleton
+  - `cache/SingleCache.ts` - Cache com Singleton
+
