@@ -230,3 +230,67 @@ Para ver a implementação completa do Singleton aplicado a um sistema de cache,
   - `cache/RegularCache.ts` - Cache sem Singleton
   - `cache/SingleCache.ts` - Cache com Singleton
 
+## Factory Method 
+Problema a ser resolvido
+A criacao direta de objetos podem trazer varios desafios:
+
+- Acoplamento forte entre classes
+- Dificuldade para tocar implementacoes
+- Codigo inflexivel e dificil de manter
+- Violacao do principio de responsabilidade unica
+
+# Solucao
+O factory Method define uma interface para criar objetos, mas permite que as subclasses decidam quais classes instanciar.
+
+- Criar uma interface ou classe abstrata com metodo factory
+- Permitir que subclasses implementem a logica especifica de criacao
+- Desacoplar o codigo que usa o objeto de codigo que cria
+
+# Exemplos de Uso
+- Metodos de Pagamentos: Uma classe PaymentProcessor com factory method createPayment(), onde CreditCardProcessor criar pagamentos com cartao e PixProcessor criar pagamentos via Pix
+- Conexoes de Banco de Dados: Uma classe DataBaseFactory com factory method createConnection(), onde MySQLFactory criar conexoes MySQL e PostgressFactory cria conexoes PostgreSQL
+- Geracao de Documentos: Uma classe DocumentFactory com factory method createDocument(), onde as subclasses geram diferentes formatos como PDF ou DOCX de forma simplificada.
+
+
+## Builder
+Problea a ser resolvido
+
+A cricao de objetos complexos pode apresentar diversos desafios:
+
+- Cronstrutores com muitos paramentros
+- Ordem obrigatoria de inicializacao
+- Configuracoes parciais impossiveis
+- Codigo pouco legivel e propenso a erros
+
+# Solucao
+O builder permite construir objetos complexos passo a passo, separando o processo de construcao da representacao final.
+
+- Criar uma classe Builder separada que encapsula a logica de construcao.
+- Permitir a configuracao de diferentes caracteristicas de forma independente
+- Possibilidade a criacao do objetos final apenas quando tiver complemente configurado
+
+# Exemplos de uso
+- Montagem de objetos de configuracao complexa
+- Criacao de objetos imutaveis com muitos campos opcionais
+- Montagem de queries SQL complexas
+
+![Desenho Builder(Implementacao)](/images/image6.png)
+
+## Abstract Factory
+Problema a ser resolvido
+
+A criacao de familiais de objetos relacionados ou dependentes pode apresentar varios desafios:
+
+- Necessidade de garantir compatibilidade entre objetos relacionados.
+- Dificuldade em manter consistencia entre familiais de produtos
+- Forte acoplamento entre o codigo cliente e as classes concretas
+- Complexidade ao trocar toda uma familia de objetos
+
+# Solucao
+O abstract factory fornce uma interface para criar familiais de objetos relacionados sem especificar suas classes concretas.
+
+- Criar uma interface abstrata para fabricar produtos relacionados
+- Implementar fabricas concetras para cada familia de produtos
+- Garantir que os produtos criados sejam entre si
+
+## Em gravacao as aulas
