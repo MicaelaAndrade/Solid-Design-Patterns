@@ -274,7 +274,7 @@ O builder permite construir objetos complexos passo a passo, separando o process
 - Criacao de objetos imutaveis com muitos campos opcionais
 - Montagem de queries SQL complexas
 
-![Desenho Builder(Implementacao)](/images/image6.png)
+![Desenho Builder(Implementacao)](/images/image-6.png)
 
 ## Abstract Factory
 Problema a ser resolvido
