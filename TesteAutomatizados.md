@@ -74,3 +74,12 @@ Ajuda a revelar inconsistencias ou mal-entendidos nos requisitos do sistema
 # Piramide de testes e sistemas legados
 
 ![Piramide](/images/image-7.png)
+
+# Sobre o TDD
+
+- Considerado uma metodologia Agil
+- Criado por Kent Beck em 2002 atraves do livro " Test-Driven Development: by Example" 
+- Motivacao:
+      - Desafios diarios na criacao de um software com bugs dificis de detectar com
+      - Complexidade crescente
+      - Entendimento dos requisitos de negocio
