@@ -83,3 +83,37 @@ Ajuda a revelar inconsistencias ou mal-entendidos nos requisitos do sistema
       - Desafios diarios na criacao de um software com bugs dificis de detectar com
       - Complexidade crescente
       - Entendimento dos requisitos de negocio
+
+ ![Processo de trabalho e dinamica](/images/image-8.png)  
+
+ ![](/images/image-9.png)
+
+# 3 Leis do TDD
+- Nao e permitido escrever codigo de producao sem antes ter um teste falho:
+      - Assegura que todo o codigo escrito esta sendo direcionado por uma necessidade explicita definida por um teste.
+- Nao e permitido escrever mais de um teste unitario suficiente para falhar:
+      - Mantem o foco em um unico problema de cada vez
+- Nao e permitido escrever mais codigo de producao do que o necessario para fazer o teste atual passar.
+      - Evita a tentacao de antecipar funcionalidade futuras e mantem o codigo o mais simples possivel.
+
+# Padroes     
+- Fake it ("Fingir")
+      - incialmente, retornar resultados estaticos para fazer o teste passar, e depois evoluir o codigo para ser mais generico.
+
+- Triangulation ("Triangulacao")
+      - Introduzir novos testes com diferenes entradas para generalizar o codigo de producao de forma segura.
+
+- Obvious Implementation("Implementacao Obvia")
+      - Quando a solucao e evidente, implementar diretamente o codigo necessario para passar no teste, sem etapas intermediarias      
+
+# Ganho real com TDD
+- Refatoracao Continua 
+- Pequenos Passos e Feedback Rapido
+- Documentacao Viva
+- Coragem para Mudar 
+
+# Quando nao usar TDD
+- Desenvolvimento exploratorio
+- Prototipos e provar de conceito talvez o overhead nao se justifique
+- Requistos ALTAMENTE volateis e poucos claros
+
